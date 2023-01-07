@@ -1,0 +1,29 @@
+{
+  "sms": {
+    "appId": "TheGameDefault.TECH",
+    "notificationType": "SMS",
+    "message": "This is a test message from TheGameNotification service.",
+    "destinations": [
+      "+919XXXXXXXXX"
+    ]
+  },
+  "whatsapp": {
+    "appId": "TheGameDefault.TECH",
+    "notificationType": "WHATSAPP",
+    "message": "This is a test message from TheGameNotification service.",
+    "destinations": [],
+    "destination": "919XXXXXXXXX"
+  },
+  "email": {
+    "appId": "TheGameDefault.TECH",
+    "notificationType": "EMAIL",
+    "subject": "Test email from notification service",
+    "message": "This is a test message from TheGameNotification service.",
+    "htmlBody": null,
+    "destinations": [
+      "+919XXXXXXXXX"
+    ]
+  }
+}
+
+
