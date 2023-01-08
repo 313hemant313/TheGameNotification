@@ -84,3 +84,8 @@ Using AWS Pinpoint api, to add any other vendor api just create a service and au
 ```sh
 ./mvnw clean install
 ```
+
+### To run via docker compose [Not tested]
+```sh
+docker compose up --build
+```
