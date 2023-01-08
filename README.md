@@ -1,6 +1,9 @@
 # TheGameNotification- A Spring boot standalone notification service.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ![alt text](https://github.com/313hemant313/TheGameNotification/blob/main/TheGameNotification.png?raw=true)
+
 
 TheGameNotification uses a number of projects to work properly:
 
@@ -21,9 +24,6 @@ The following items should be installed in your system:
     * [Spring Tools Suite](https://spring.io/tools) (STS)
     * [VS Code](https://code.visualstudio.com)
 
-### Class Diagram
-![alt text](https://github.com/313hemant313/TheGameNotification/blob/main/ClassDiagram.png?raw=true)
-
 ### Supported channels
 
 * SMS
@@ -38,6 +38,32 @@ Using Facebook whatsapp api, to add any other vendor api just create a service a
 ```sh
 Using AWS Pinpoint api, to add any other vendor api just create a service and autowire in EmailNotificationService.class
 ```
+
+### Usage
+Add dependency in pom.xml
+```
+<dependency>
+  <groupId>tech.thegamedefault</groupId>
+  <artifactId>the-game-notification</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+Required configurations
+- POSTGRESQL_URL
+- POSTGRESQL_USERNAME
+- POSTGRESQL_PASSWORD
+- KAFKA_BOOTSTRAP_SERVERS
+- PINPOINT_ACCESS_KEY
+- PINPOINT_ACCESS_SECRET
+- PINPOINT_REGION
+- PINPOINT_PROJECT_ID
+- WHATSAPP_URL
+- WHATSAPP_PHONE_NUMBER_ID
+- WHATSAPP_ACCOUNT_ID
+- WHATSAPP_ACCESS_TOKEN
+
+### Class Diagram
+![alt text](https://github.com/313hemant313/TheGameNotification/blob/main/ClassDiagram.png?raw=true)
 
 ### Exposed Http Endpoints
 
@@ -83,4 +109,9 @@ Using AWS Pinpoint api, to add any other vendor api just create a service and au
 ### To Build
 ```sh
 ./mvnw clean install
+```
+
+### To run via docker compose [Not tested]
+```sh
+docker compose up --build
 ```

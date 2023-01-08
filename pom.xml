@@ -28,6 +28,14 @@
     <java.version>18</java.version>
   </properties>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>313hemant313</name>
+      <url>https://maven.pkg.github.com/313hemant313/TheGameNotification</url>
+    </repository>
+  </distributionManagement>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
